@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            /*Medidas absolutas
+            cm,mm,in,px,pt,pc
+
+            Medidas relaticas
+            em,ex,rem,rw
+            */
+            font-size: 1em; /*não pode escrever 1em com espaço*/
+            font-style: italic;
+            font-weight:bolder ; /*peso da fonte*/
+            text-decoration: underline;
+
+        }
+
+        h1 {
+            
+            /*shorthand font
+            font-style, font-weight, font-size, fonte-family
+            
+            font-family: 'work sans', sans-serif;
+            font-weight:bolder ;
+            font-size: 3em;
+            font-style: italic;
+            */
+            
+            font: italic bolder 3em 'work sans', sans-serif
+        }
+        h2 {
+            font: bold 2em 'work sans'
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com fontes</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat repellat exercitationem nemo nulla ullam distinctio voluptas ab aliquam, architecto soluta aut. Omnis dolorem magni alias necessitatibus sequi, maiores ipsa cupiditate!
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio mollitia assumenda eligendi. Dolore minima sint, ex reprehenderit labore ea officiis quod laudantium illum? Ducimus eligendi voluptas qui laborum. Explicabo, autem?
+    </p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed nemo repellat, at voluptatibus accusamus nulla aliquid tempora optio doloremque, placeat beatae nobis est aspernatur aperiam iusto libero sit numquam recusandae?</p>
+    <h2>Subtititulo do exércicio</h2>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia, cum debitis. Nihil ratione sunt labore doloribus quasi voluptatum nobis est, temporibus quam in blanditiis perspiciatis quisquam consequatur? Temporibus, perspiciatis rerum! 
+    </p>
+</body>
+</html>
