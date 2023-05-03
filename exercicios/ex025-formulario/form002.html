@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        /*required usa este parametro quando o preenchimento daquele campo é obrigatório*/
+        /*minlength é o minimo de letras, maxlangth é o maximo de letras*/
+        /* size é o tamanho da caixinha, significa quantas letras vai paracer por vez*/
+        /*placeholder como se for se uma 'dica' do que é pra ser digitado na caixinha*/
+        /*para que o navegador sugiram automaticamente os dados ja salvo no navegador, dentro de FORM o parametro AUTOCOMPLETE tem que está "ON", para que esta funcionalidade seja exercutado para o restante do formulario, assim, para que nos campos de preenchimento abaixo funcione a sugestão de autopreenchimento, entretanto tem que configurar as caixinha com o parametro de AUTOCOMPLETE com sua configuração correspondente*/
+    </style>
+</head>
+<body>
+    <h1>Teste de Formulário</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <p>
+            <label for="iusu">Usuário: </label>
+            <input type="text" name="usu" id="iusu" required minlength="5" maxlength="15" size="10" placeholder="Nome do usuario" autocomplete="username">
+        </p>
+        <p>
+            <label for="isen">Senha: </label>
+            <input type="password" name="sen" id="isen" required minlength="8" maxlength="20" size="10" placeholder="minimo 8 letras" autocomplete="current-password">
+        </p>
+        <p>
+            <input type="submit" value="ENVIAR">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
